@@ -31,6 +31,7 @@ repo sync
 ```
 Bitbake settings
 ```
+export TEMPLATECONF=${PWD}/layers/meta-ce/conf
 . layers/poky/oe-init-build-env
 cp ../layers/meta-ce/conf/local.conf.sample conf/local.conf
 cp ../layers/meta-ce/conf/bblayers.conf.sample conf/bblayers.conf
