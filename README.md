@@ -40,4 +40,16 @@ cp ../layers/meta-ce/conf/bblayers.conf.sample conf/bblayers.conf
 ```
 bitbake ce-linux-image
 ```
+## Flash image to SD card
+Image will be stored in build/tmp/deploy/images/raspberrypi4-64/(image-name).sdimg
+Flash it with bmaptool:
+```
+sudo bmaptool copy build/tmp/deploy/images/raspberrypi4-64/(image-name).sdimg /dev/mmcblk0
+```
+Bmaptool can be installed via the command (Ubuntu):
+```
+sudo apt install -y bmap-tools
+```
+
+***Alert:*** Flashing from the inside of the Docker container could be not possible, in that case, copy the image outside the container and flash it from the host. 
 
