@@ -1,5 +1,5 @@
 # ce-linux
-Build environment for CE Linux
+Build environment for CE Linux & script for using Mender API
 
 ## Building and running the Docker image 
 To build the docker image, run:
@@ -52,4 +52,17 @@ sudo apt install -y bmap-tools
 ```
 
 ***Alert:*** Flashing from the inside of the Docker container could be not possible, in that case, copy the image outside the container and flash it from the host. 
+
+## Script for using the Mender API 
+Bash script get-device-attr.sh can be used for gathering inventory information about the device from Mender server. 
+
+Usage: 
+```
+./get-device-attr.sh (attribute)
+```
+
+Make sure script is executable. To make it executable, run: 
+```
+chmod +x get-device-attr.sh
+```
 
