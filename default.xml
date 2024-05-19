@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://git.yoctoproject.org" name="yocto"/>
+  <remote fetch="https://github.com/openembedded" name="oe-mirror"/>
+  <remote fetch="https://github.com/mendersoftware/" name="mender"/>
+  <remote fetch="https://github.com/janaperic/meta-ce" name="ce-linux"/>
+
+  <default sync-j="4"/>
+
+  <project name="poky"
+    remote="yocto"
+    revision="445c60a484f33d200e2890b4a174b436cd2f969e"
+    upstream="kirkstone"
+    path="layers/poky"/>
+  <project name="meta-openembedded"
+    remote="oe-mirror"
+    revision="5a6f7925bd2b885955c942573f70a5594f231563"
+    upstream="kirkstone"
+    path="layers/meta-openembedded"/>
+  <project name="meta-raspberrypi"
+    remote="yocto"
+    revision="9dc6673d41044f1174551120ce63501421dbcd85"
+    upstream="kirkstone"
+    path="layers/meta-raspberrypi"/>
+  <project name="meta-mender"
+    remote="mender"
+    revision="a45be7b43d4e4e1ccd5a559dde59f01b34693e4e"
+    upstream="kirkstone"
+    path="layers/meta-mender"/>
+  <project name="meta-ce"
+    remote="ce-linux"
+    revision="a45be7b43d4e4e1ccd5a559dde59f01b34693e4e"
+    upstream="main"
+    path="layers/meta-ce"/>
+
+
+</manifest>
