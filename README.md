@@ -28,5 +28,16 @@ Initialize & sync repo
 ```
 repo init -u https://github.com/janaperic/ce-linux.git -b main
 repo sync
-``` 
+```
+Bitbake settings
+```
+. layers/poky/oe-init-build-env
+cp ../layers/meta-ce/conf/local.conf.sample conf/local.conf
+cp ../layers/meta-ce/conf/bblayers.conf.sample conf/bblayers.conf
+```
+
+## Build the image
+```
+bitbake ce-linux-image
+```
 
