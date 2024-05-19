@@ -15,7 +15,10 @@ docker run -it yoctobuild:v1
 Build can be started either from the Docker container (see above), or on a Linux distribution supported by the Yocto Project (see [system requirements](https://docs.yoctoproject.org/ref-manual/system-requirements.html))
 
 **The instructions bellow are meant to be executed inside the Docker container.**
-
+```
+mkdir ce-linux
+cd ce-linux
+```
 Make sure git user settings are set before starting: 
 ```
  git config --global user.name ""
