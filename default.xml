@@ -3,7 +3,7 @@
   <remote fetch="https://git.yoctoproject.org" name="yocto"/>
   <remote fetch="https://github.com/openembedded" name="oe-mirror"/>
   <remote fetch="https://github.com/mendersoftware/" name="mender"/>
-  <remote fetch="https://github.com/janaperic/meta-ce" name="ce-linux"/>
+  <remote fetch="https://github.com/janaperic" name="ce-linux"/>
 
   <default sync-j="4"/>
 
@@ -24,7 +24,7 @@
     path="layers/meta-raspberrypi"/>
   <project name="meta-mender"
     remote="mender"
-    revision="a45be7b43d4e4e1ccd5a559dde59f01b34693e4e"
+    revision="f5455b66f259a49d78ca96f0730b57f0f6b3a6a5"
     upstream="kirkstone"
     path="layers/meta-mender"/>
   <project name="meta-ce"
