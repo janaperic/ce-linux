@@ -54,7 +54,7 @@ sudo apt install -y bmap-tools
 
 ***Alert:*** Flashing from the inside of the Docker container could be not possible, in that case, copy the image outside the container and flash it from the host. 
 
-## Script for using the Mender API 
+## Task: Write a script using the Mender API 
 Bash script get-device-attr.sh can be used for gathering inventory information about the device from Mender server. 
 
 Usage: 
