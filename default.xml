@@ -29,7 +29,7 @@
     path="layers/meta-mender"/>
   <project name="meta-ce"
     remote="ce-linux"
-    revision="a45be7b43d4e4e1ccd5a559dde59f01b34693e4e"
+    revision="482f1b38b5aa768eb5f50061d2d5e1f798450405"
     upstream="main"
     path="layers/meta-ce"/>
 
